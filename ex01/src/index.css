@@ -1,0 +1,81 @@
+.heading {
+    text-align: center;
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .keyboard-wrapper {
+    width: 50%;
+    padding: 5px 0;
+    background-color: #383631;
+    height: 100px;
+  }
+  
+  .keys {
+    width: 100%;
+    display: grid;
+    grid-row-gap: 3px;
+  }
+  
+  .first-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3px 2px;
+  }
+  
+  .back-space {
+    grid-column: 11/13;
+    grid-row: 1/3;
+  }
+  
+  .second-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3px 2px;
+  }
+  
+  .caps-lock-key {
+    grid-column: 10/12;
+  }
+  
+  .enter-key {
+    grid-column: 10/12;
+  }
+  
+  .space-key {
+    grid-column: 1/10;
+  }
+  
+  .shift-key {
+    grid-column: 10/11;
+  }
+  
+  .ok-key {
+    grid-column: 11/12;
+  }
+  
+  .key {
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.507);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  textarea {
+    border: 1px solid #44afc2;
+    background-color: #ccedfc;
+    outline: none;
+    color: #080808;
+  }
